@@ -1,0 +1,1026 @@
+/* ROOT VALUES */
+:root {
+    --main-white: #ffffff;
+    --main-black: #000000;
+    --main-dark-blue: #003d5b;
+    --main-teal: #00818c;
+    --main-orange: #edae49;
+    --main-red: #CF3F52;
+}
+
+/* DOCUMENT ALIGN RESET */
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+/* BASE HTML STYLING */
+html {
+    /* FONT-SIZE ADDED FOR FONT RESET */
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-size: 1.65rem;
+    color: var(--main-black);
+    background-color: var(--main-white);
+    font-family: Arial, Helvetica, sans-serif;
+    /* DISPLAY & FLEX-DIRECTION ADDED FOR ANCHORED FOOTER */
+    display: flex;
+    flex-direction: column;
+}
+
+/* HTML, BODY ADDED FOR ANCHORED FOOTER */
+html, body {
+    height: 100%;
+}
+
+/* BODY-CONTENT ADDED FOR ANCHORED FOOTER */
+.body-content {
+    flex: 1 0 auto;
+}
+
+/* FOOTER-CONTENT ADDED FOR ANCHORED FOOTER */
+.footer-content {
+    flex-shrink: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3.25rem;
+    color: var(--main-dark-blue);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--main-dark-blue);
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+a:link, a:active {
+    color: var(--main-teal);
+}
+
+a:visited {
+    color: var(--main-red);
+}
+
+.center-item {
+    text-align: center;
+}
+
+.img-rounding {
+    border-radius: 0.5rem;
+}
+
+.bottom-spacing {
+    padding-bottom: 3rem;
+}
+
+/* NAVIGATION STYLES */
+nav {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    height: 7rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-dark-blue);
+}
+
+nav ul, footer ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.nav-logo-whale {
+    width: 65px;
+    height: auto;
+}
+
+.nav-logo-text {
+    height: 35px;
+    width: auto;
+}
+
+.nav-images {
+    width: 55%;
+    height: auto;
+}
+
+.nav-start-spacing {
+    padding-left: 2rem;
+}
+
+.nav-end-spacing {
+    padding-right: 2rem;
+}
+
+.nav-link a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--main-white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.nav-link a:hover {
+    color: var(--main-black);
+    background-color: var(--main-orange);
+}
+
+/* MAIN AREA ELEMENTS */
+.main {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+header {
+    text-align: center;
+}
+
+/* TWO BOXES ON TOP OF INDEX PAGE */
+.two-box-flex {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.two-box-flex p {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    width: calc(1/1 * 100%);
+}
+
+/* SETS UP INDIVIDUAL BOX IN THE TWO BOX SET UP */
+.flex-box-space {
+    width: 42.5%;
+    word-wrap: break-word;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* SETS UP LEFT MARGIN ON LEFT INDEX BOX */
+.fbs-left-margin {
+    margin: 0 2rem 0 2rem;
+}
+
+/* SETS UP RIGHT MARGIN ON RIGHT INDEX BOX */
+.fbs-right-margin {
+    margin: 0 2rem 0 0;
+}
+
+.site-directory {
+    width: 92%;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.site-directory section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+/* STYLES FOR SITE DIRECTORY TOP THREE BOXES */
+.directory-content-boxes {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: calc(1/5 * 100%);
+}
+
+.faq-two-box {
+    padding: 2rem;
+    margin-top: 4rem;
+
+}
+
+.site-directory h3 {
+    padding-bottom: 1rem;
+}
+
+/* MARGIN LEFT SPACE SPECIFIC TO EACH */
+.directory-right-space {
+    margin-right: 2.5rem;
+}
+
+/* ARTICLE SPACING */
+.article-top-pad {
+    padding-top: 3rem;
+}
+
+.article-spacing {
+    margin: 0 5rem 0 5rem;
+}
+
+/* FAQ SPACING */
+.faq-spacing {
+    padding: 0 5rem;
+}
+
+.faq-pricing-space {
+    padding: 5rem 10rem;
+}
+
+/* ABOUT PAGE */
+.about-boxes {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+}
+
+.about-box {
+    width: calc(1/2 * 90%);
+}
+
+/* ARTICLE PARAGRAPH SPACING */
+.a-para-spacing {
+    padding-top: 2rem;
+}
+
+.a-para-tlbr-spacing {
+    padding: 2rem 2rem 1rem 0;
+}
+
+.paypal-button {
+    display: block;
+    width: 15%;
+}
+
+/* PORTFOLIO PAGE SHOE GALLERY */
+#shoe-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#shoe-gallery img {
+    width: 25%;
+    width: 300px;
+    object-fit: cover;
+}
+
+/* PORTFOLIO PAGE CARD GALLERY */
+#card-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-gallery {
+    width: 20%;
+    width: 300px;
+    object-fit: cover;
+}
+
+/* BLOCK SPACING FOR SUCCESS AND CANCEL PAGES FOR PAYPAL */
+.success-cancel-spacing {
+    margin: 0 10rem;
+}
+
+.success-cancel-spacing p {
+    padding-bottom: 2rem;
+}
+
+/* FAQ PAGE ACCORDION */
+.accordion {
+    background-color: var(--main-teal);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    border-radius: 0.5rem;
+    padding: 12px;
+}
+
+.accordion h2 {
+    font-size: 2rem;
+    color: var(--main-white);
+}
+
+.active, .accordion:hover {
+    background-color: var(--main-red);
+}
+
+.accordion:after {
+    content: "\002B";
+    font-size: 1.5rem;
+    color: var(--main-white);
+    font-weight: bold;
+    float: right;
+    margin-right: 2rem;
+}
+
+.active:after {
+    content: "\2212";
+    font-weight: bold;
+}
+
+.panel {
+    height: 100%;
+    padding: 0 2rem 1rem 2rem;
+    background-color: var(--main-white);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /*padding-bottom: 1rem;*/
+}
+
+.panel p {
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+}
+
+/* FAQ SPACING */
+.faq-spacing {
+    padding: 0 10rem;
+}
+
+/* LETTER ON FAQ PAGE */
+.faq-letter {
+    border: 2px solid var(--main-dark-blue);
+    border-radius: 0.5rem;
+    width: 75%;
+    margin: auto;
+}
+
+.faq-letter h4 {
+    padding-left: 1.5rem;
+  }
+  
+.faq-letter-bottom {
+    margin-bottom: 3rem;
+}
+
+/* CONTACT FORM */
+form {
+    max-width: 50rem;
+    min-width: 10rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    padding-bottom: 2rem;
+}
+
+input, textarea {
+    margin: 0.5rem 0 0 0;
+    width: 100%;
+    min-height: 2.5rem;
+    border: 1px solid var(--main-dark-blue);
+    border-radius: 0.5rem;
+    font-size: 1.65rem;
+    font-family: inherit;
+    padding: 0.25rem 0 0.25rem 0.25rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-submit {
+    display: block;
+    width: 60%;
+    margin: 4rem auto;
+    height: 3rem;
+    font-size: 2rem;
+    color: var(--main-white);
+    background-color: var(--main-teal);
+    border-radius: 0.5rem;
+    border-color: var(--main-dark-blue);
+    min-width: 18rem;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    color: var(--main-black);
+    background-color: var(--main-orange);
+    cursor: pointer;
+}
+
+/* FOOTER CONTENT */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--main-white);
+    background-color: var(--main-dark-blue);
+}
+
+footer ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer li {
+    padding: 0 1rem;
+}
+
+.footer-link {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+
+
+/* MEDIA QUERY SECTION */
+
+/* MEDIA QUERY LANDSCAPE MIN-H 120px / MAX-H 480px */
+@media screen and (orientation: landscape) and (min-height: 120px) and (max-height: 480px) {
+    /* HEADER ITEMS */
+    nav {
+        width: 100vw;
+    }
+    .nav-logo-whale {
+        display: none;
+    }
+
+    .nav-logo-text {
+        width: 200px;
+        height: auto;
+    }
+
+    #index-example-image {
+        width: 300px;
+        height: auto;
+    }
+
+    .nav-start-spacing {
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .nav-link a {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    .fbs-left-margin, .fbs-right-margin {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* INDEX DIRECTORY ITEMS */
+    .site-directory section {
+        flex-flow: row wrap;
+    }
+
+    .directory-content-boxes {
+        width: calc(1/1 * 100%);
+    }
+
+    .directory-right-space {
+        margin-right: 0;
+    }
+
+    .directory-top-space {
+        margin-top: 0;
+    }
+
+    /* MAIN */
+    .main {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* H STYLES */
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.65rem;
+    }
+
+    /* ABOUT PAGE */
+    #hc-photo {
+        width: 150px;
+        height: auto;
+    }
+
+    .about-boxes {
+        width: 80%;
+    }
+
+    .about-box {
+        width: calc(1/1 * 100%);
+    }
+
+    .about-box p {
+        margin: 0;
+    }
+
+    /* FOR SALE PAGE */
+    .faq-spacing {
+        margin: 0;
+        padding: 0 2.5rem;
+    }
+
+    /* ACCORDION AND PANEL FOR ACCORDIAN */
+    .accordion {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    
+    .accordion h2 {
+        font-size: 1.5rem;
+    }
+    
+    .accordion:after {
+        font-size: 1.25rem;
+        float: right;
+    }
+    
+    .panel {
+        margin: 0;
+        padding-left: 1em;
+    }
+    
+    .panel p {
+        padding: 1rem 2.5rem;
+        font-size: 1.8rem;
+    }
+
+    .responsive-smaller {
+        width: 200px;
+        height: auto;
+    }
+
+    /* FOOTER */
+    .nav-images {
+        width: 50%;
+        height: auto;
+    }
+
+    footer li {
+        padding: 0 0.5rem;
+    }
+    
+    .copyright {
+        font-size: 0.5rem;
+        text-align: center;
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+}
+
+/* MEDIA QUERY PORTRAIT MIN-W 120px / MAX-W 480px */
+@media screen and (orientation: portrait) and (min-width: 120px) and (max-width: 480px) {
+    /* BODY */
+    body {
+        font-size: 1.5rem;
+    }
+
+    /* HEADER ITEMS */
+    .nav-logo-whale  {
+        display: none;
+    }
+
+    .nav-logo-text {
+        height: 15px;
+        width: auto;
+    }
+
+    .nav-start-spacing {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .nav-end-spacing {
+        padding-right: 0.5rem;
+    }
+
+    .nav-link a {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--main-white);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    /* MAIN */
+    .main {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* H STYLES */
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.65rem;
+    }
+
+    /* DIRECTORY SPACING */
+    .flex-box-space {
+        width: 100%;
+    }
+
+    #index-example-image {
+        width: 250px;
+        height: auto;
+    }
+
+    .fbs-left-margin, .fbs-right-margin {
+        margin: 0;
+        padding: 1rem 3rem 1rem 1.5rem;
+    }
+
+    .site-directory section {
+        flex-flow: row wrap;
+    }
+
+    .directory-content-boxes {
+        width: calc(1/1 * 100%);
+    }
+
+    .faq-two-box {
+        padding: 0;
+        margin-top: 4rem;
+        width: calc(1/1 * 100%);
+    }
+
+    .directory-right-space {
+        margin-right: 0;
+    }
+
+    .directory-top-space {
+        margin-top: 0;
+    }
+
+    /* ABOUT PAGE */
+    #hc-photo {
+        width: 125px;
+        height: auto;
+    }
+
+    .about-boxes {
+        width: 80%;
+    }
+
+    .about-box {
+        width: calc(1/1 * 100%);
+    }
+
+    .about-box p {
+        margin: 0;
+    }
+
+    /* FOR SALE PAGE */
+    .faq-spacing, .forsale-spacing {
+        margin: 0;
+        padding: 0.5rem 0 0 1rem;
+    }
+
+    .faq-letter {
+        padding-left: 2rem;
+    }
+
+    .accordion {
+        width: 95%;
+        font-size: 1.25rem;
+    }
+    
+    .accordion h2 {
+        font-size: 1.5rem;
+    }
+    
+    .accordion:after {
+        font-size: 1.25rem;
+        float: right;
+    }
+    
+    .panel {
+        margin: 0;
+    }
+    
+    .panel p {
+        width: 90%;
+        padding: 1rem 0 2rem 0;
+        font-size: 1.5rem;
+    }
+
+    .responsive-smaller {
+        width: 200px;
+        height: auto;
+    }
+
+    /* FORM PAGE */
+    form {
+        width: 75%;
+    }
+
+    /* FOOTER */
+    .nav-images {
+        width: 40%;
+        height: auto;
+    }
+
+    footer li {
+        padding: 0 0.5rem;
+    }
+    
+    .copyright {
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+}
+
+/* MEDIA QUERY LANDSCAPE MIN-H 481px / MAX-H 768px */
+@media screen and (orientation: landscape) and (min-height: 481px) and (max-height: 768px) {
+    /* HEADER ITEMS */
+    nav {
+        width: 100vw;
+    }
+    .nav-logo-whale {
+        width: 50px;
+        height: auto;
+    }
+
+    .nav-logo-text {
+        width: 200px;
+        height: auto;
+    }
+
+    #index-example-image {
+        width: 300px;
+        height: auto;
+    }
+
+    .nav-start-spacing {
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .nav-link a {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    .fbs-left-margin, .fbs-right-margin {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* INDEX DIRECTORY ITEMS */
+    .site-directory section {
+        flex-flow: row wrap;
+    }
+
+    .directory-content-boxes {
+        width: calc(1/1 * 100%);
+    }
+
+    .directory-right-space {
+        margin-right: 0;
+    }
+
+    .directory-top-space {
+        margin-top: 0;
+    }
+
+    /* MAIN */
+    .main {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* H STYLES */
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.65rem;
+    }
+
+    /* FAQ SPACING */
+    .faq-spacing {
+        padding: 0 5rem;
+    }
+
+    .accordion {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    
+    .accordion h2 {
+        font-size: 1.5rem;
+    }
+    
+    .accordion:after {
+        font-size: 1.25rem;
+    }
+    
+    .panel {
+        margin: 0;
+    }
+
+    .panel p {
+        padding: 1rem 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .responsive-smaller {
+        width: 200px;
+        height: auto;
+    }
+
+    /* FOOTER */
+    .nav-images {
+        width: 50%;
+        height: auto;
+    }
+
+    footer li {
+        padding: 0 0.5rem;
+    }
+    
+    .copyright {
+        font-size: 0.5rem;
+        text-align: center;
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+}
+
+/* MEDIA QUERY PORTRAIT MIN-W 481px / MAX-W 768px */
+@media screen and (orientation: portrait) and (min-width: 481px) and (max-width: 768px) {
+    /* HEADER ITEMS */
+    nav {
+        width: 100vw;
+    }
+    .nav-logo-whale {
+        width: 50px;
+        height: auto;
+    }
+
+    .nav-logo-text {
+        width: 200px;
+        height: auto;
+    }
+
+    #index-example-image {
+        width: 300px;
+        height: auto;
+    }
+
+    .nav-start-spacing {
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .nav-link a {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    .fbs-left-margin, .fbs-right-margin {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* INDEX DIRECTORY ITEMS */
+    .site-directory section {
+        flex-flow: row wrap;
+    }
+
+    .directory-content-boxes {
+        width: calc(1/1 * 100%);
+    }
+
+    .directory-right-space {
+        margin-right: 0;
+    }
+
+    .directory-top-space {
+        margin-top: 0;
+    }
+
+    /* MAIN */
+    .main {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* H STYLES */
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.65rem;
+    }
+
+    /* FAQ SPACING */
+    .faq-spacing {
+        padding: 0 5rem;
+}
+
+    .accordion {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    
+    .accordion h2 {
+        font-size: 1.5rem;
+    }
+    
+    .accordion:after {
+        font-size: 1.25rem;
+    }
+    
+    .panel {
+        margin: 0;
+    }
+
+    .panel p {
+        padding: 1rem 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .responsive-smaller {
+        width: 200px;
+        height: auto;
+    }
+
+    /* FOOTER */
+    .nav-images {
+        width: 50%;
+        height: auto;
+    }
+
+    footer li {
+        padding: 0 0.5rem;
+    }
+    
+    .copyright {
+        font-size: 0.5rem;
+        text-align: center;
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+}
+
+/* MEDIA QUERY PORTRAIT MIN-W 481px / MAX-W 768px */
+@media screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1080px) {
+    /* HEADER ITEMS */
+    nav {
+        width: 100vw;
+    }
+    .nav-logo-whale {
+        width: 50px;
+        height: auto;
+    }
+
+    .nav-logo-text {
+        width: 200px;
+        height: auto;
+    }
+
+    #index-example-image {
+        width: 400px;
+        height: auto;
+    }
+
+    .nav-start-spacing {
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .nav-link a {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+}
